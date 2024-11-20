@@ -1,0 +1,9 @@
+@font-face {
+    font-family: "Borel-Regular";
+    src: url(C:\Users\maxim\fonts) format("woff2");
+    font-weight: 400;
+    }
+
+titel{
+    font-family: "Borel-Regular", sans-serif;
+}
