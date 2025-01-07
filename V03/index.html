@@ -33,9 +33,9 @@
             <div class="card2header">
                 <h2>RECOMMENDED</h2>
                 <h3>Small<br> Business<br> Plan</h3>
-                <h4>$59 per month</h4>
+                <h4 class="price">$59 per month</h4>
                 <button class="button">Sign Up Now</button>
-                <h5>YOU GET PULSE BASICS, PLUS:</h5>
+                <h5 class="subtitle">YOU GET PULSE BASICS, PLUS:</h5>
             </div>
             <ul>
                 <li>cash flow across multiple financial<br> accounts</li>
@@ -48,14 +48,18 @@
             </ul>
         </div>
         <div class="card3">
-            <h4>Complex business with multiple financial accounts, currencies, or auditing needs?</h4>
-            <h1>Unlock Extra Features</h1>
-            <h2>$89 per month</h2>
-            <button class="button">Try Premium</button>
-            <h3>GET IT ALL, PLUS:</h3>
+            <div class="card3header">
+                <h4>Complex business with multiple financial accounts, currencies, or auditing needs?</h4>
+                <h1>Unlock Extra Features</h1>
+                <h2 class="price">$89 per month</h2>
+                <button class="button">Try Premium</button>
+                <h5 class="subtitle">GET IT ALL, PLUS:</h5>
+            </div>
             <ul>
                 <li>Manage cash flow across unlimited financial<br> accounts</li>
+                <br>
                 <li>Convert to any currency for localized alized cash<br> flow reporting and projections</li>
+                <br>
                 <li>Attach involces or contracts to your cash<br> flow entries for accountability and auditing</li>
             </ul>
         </div>
@@ -105,12 +109,13 @@ body {
     display: flex;
     width: 26%;
     padding: 20px;
-    border-radius: 10px;
     flex-direction: column;
     border: 1px solid #00ad6a;
     background-color: #d6dae5;
     overflow: hidden;
     padding-top: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .card2header{
@@ -153,15 +158,16 @@ body {
     text-align: center;
 }
 
-.card2 h4{
+.price{
     text-align: center;
     font-size: 20px;
     font-weight: lighter;
     margin-bottom: 9px;
     margin-top: 0;
+    color: rgb(108, 108, 108);
 }
 
-.card1 h5{
+.subtitle{
     font-weight: 800;
 }
 
@@ -175,17 +181,45 @@ body {
 .card3{
     display: flex;
     width: 26%;
-    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
     flex-direction: column;
     border: 1px solid #bec9c5;
     background-color: #d6dae5
+}
+
+.card3header{
+    text-align: center;
+}   
+
+.card3 h1{
+    color: #00ad6a;
+    font-weight: 100;
+    font-size: 28px;
+}
+
+.card3 h4{
+    background-color: lightgrey;
+    margin: 0;
+    width: 116%;
+    margin-left: -20px;
+    height: 76px;
+    font-size: 10px;
+}
+
+.card3 ul{
+    line-height: 14px;
+    margin-left: -28px;
+    margin-right: -3px;
+    margin-top: -8px;
 }
 
 .allcards{
     display: flex;
     align-items: center;
     margin-right: -80px;
-    margin-left: 214px;
+    margin-left: 57px;
 }
 
 </style>
