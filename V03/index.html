@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" referrerpolicy="no-referrer">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin referrerpolicy="no-referrer">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet" referrerpolicy="no-referrer">
    <!--<link rel="stylesheet"
         href="style.css">-->
     <title>Pulse</title>
@@ -11,56 +14,58 @@
 
     <div class="header">
         <h1>Try Pulse free for<br>
-            30 days</h1>
+            30 days.</h1>
         <h2>See why Pulse is the best way to monitor your cash flow. Sign up<br>
             for any plan and try Pulse absolutely free for 30 days.</h2>
     </div>
 
     <div class="allcards">
         <div class="card1">
-            <h2>These are what we call the<br> Pulse Basics. They’re what<br> every customer gets.</h2><br>
+            <h2>These are what we call the Pulse Basics. They’re what every customer gets.</h2><br>
             <ul>
-                <li>Manage cash flow on a daily, <br>weekly, monthly, or yearly basis</li>
-                <li>Forecast growth with recurring<br> Income or expenses that scale<br> automatically</li>
+                <li>Manage cash flow on a daily, weekly, monthly, or yearly basis</li>
+                <li>Forecast growth with recurring Income or expenses that scale automatically</li>
                 <li>Works with any currency</li>
-                <li>Money In and Money Out,<br> categorize transactions, and run<br> helpful reports</li>
-                <li>Toggle entries and accounts on<br>and off to game out different<br> secenarios</li>
+                <li>Money In and Money Out, categorize transactions, and run helpful reports</li>
+                <li>Toggle entries and accounts on and off to game out different secenarios</li>
             </ul>
             <p>Just need the Pulse Basics?<br>
-                Get them now for $29 per month</p>
+                <a href="#">Get them now</a> for $29 per month</p>
         </div>
         <div class="card2">
+            <h2>RECOMMENDED</h2>
             <div class="card2header">
-                <h2>RECOMMENDED</h2>
                 <h3>Small<br> Business<br> Plan</h3>
                 <h4 class="price">$59 per month</h4>
                 <button class="button">Sign Up Now</button>
                 <h5 class="subtitle">YOU GET PULSE BASICS, PLUS:</h5>
             </div>
             <ul>
-                <li>cash flow across multiple financial<br> accounts</li>
+                <li>Manage cash flow across multiple financial accounts</li>
                 <br>
-                <li>Invite your investors, book keeper or<br> management team to see reports or<br>manage cash flow</li>
+                <li>Invite your investors, book keeper or management team to see reports or<br>manage cash flow</li>
                 <br>
-                <li>Integrate with QuickBooks Online for more<br> accurate cash flow</li>
+                <li>Integrate with QuickBooks Online for more accurate cash flow</li>
                 <br>
-                <li>Track your actual cash flow alongside your<br> projected cash flow</li>
+                <li>Track your actual cash flow alongside your projected cash flow</li>
             </ul>
         </div>
         <div class="card3">
             <div class="card3header">
-                <h4>Complex business with multiple financial accounts, currencies, or auditing needs?</h4>
-                <h1>Unlock Extra Features</h1>
+                <div class="grauebox">
+                    <h4>Complex business with multiple financial<br> accounts, currencies, or auditing needs?</h4>
+                </div>
+                <h1>Unlock Extra <br> Features</h1>
                 <h2 class="price">$89 per month</h2>
                 <button class="button">Try Premium</button>
                 <h5 class="subtitle">GET IT ALL, PLUS:</h5>
             </div>
             <ul>
-                <li>Manage cash flow across unlimited financial<br> accounts</li>
+                <li>Manage cash flow across unlimited financial accounts</li>
                 <br>
-                <li>Convert to any currency for localized alized cash<br> flow reporting and projections</li>
+                <li>Convert to any currency for localized alized cash flow reporting and projections</li>
                 <br>
-                <li>Attach involces or contracts to your cash<br> flow entries for accountability and auditing</li>
+                <li>Attach involces or contracts to your cash flow entries for accountability and auditing</li>
             </ul>
         </div>
     </div>
@@ -71,76 +76,101 @@
 body {  
     padding: 0;
     background-color: #eafaf1;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
-    font-weight: lighter;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 300;
 }
 
 .header h1{
-    font-size: 3rem;
+    font-size: 55px;
     text-align: center;
-    font-weight: bolder;
+    font-weight: 800;
+    margin-bottom: 15px;
+    letter-spacing: -3px;
+    line-height: 53px;
 }
 
 .header h2{
-    font-size: 1.5rem;
+    font-size: 15px;
     text-align: center;
-    font-weight: normal;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 72px;
+    letter-spacing: 1px;
+    line-height: 20px;
 }
 
 .card1{
     display: flex;
     flex-direction: column;
-    width: 27%;
+    width: 12%;
     padding: 20px;
     border-radius: 10px;
+    margin-right: 34px;
 }
 
 .card1 h2{
     color: #00ad6a;
+    font-weight: 800;
+    font-size: 16px;
 }
 
 .card1 ul{
     padding-left: 18px;
-    line-height: 13px;
+    margin: 0;
+}
+
+.card1 p{
+    margin-top: 10px;
+    margin-bottom: 0;
 }
 
 .card2{
     display: flex;
-    width: 26%;
+    width: 19%;
     padding: 20px;
     flex-direction: column;
     border: 1px solid #00ad6a;
-    background-color: #d6dae5;
-    overflow: hidden;
+    background-color: white;
     padding-top: 0;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    box-sizing: border-box;
 }
 
 .card2header{
+    display: flex;
     text-align: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 
 .card2 h2{
     background-color: #00ad6a;
     color: white;
     text-align: center;
-    padding: 0;
     font-weight: bold;
     margin-top: 0;
-    width: 122%;
+    font-size: 9px;
+    height: 22px;
+    letter-spacing: 3px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     margin-left: -20px;
-    font-size: 10px;
+    margin-right: -20px;
 }
 
 .card2 h3{
     text-align: center;
     color: #00ad6a;
     font-weight: bold;
-    font-size: 40px;
+    font-size: 49px;
     margin-bottom: 3%;
-    margin-top: 15%;
+    margin-top: 6%;
+    line-height: 45px;
+    letter-spacing: -3px;
 }
 
 .button{
@@ -149,19 +179,21 @@ body {
     border: none;
     padding: 10px;
     margin-top: 10px;
-    width: 84%;
+    width: 50%;
     border-color: #00ad6a;
     border-style: solid;
     color: black;
     font-weight: 800;
     border-width: 1.5px;
     text-align: center;
+    font-size: medium;
+    letter-spacing: -0.5px;
 }
 
 .price{
     text-align: center;
     font-size: 20px;
-    font-weight: lighter;
+    font-weight: 300;
     margin-bottom: 9px;
     margin-top: 0;
     color: rgb(108, 108, 108);
@@ -172,54 +204,99 @@ body {
 }
 
 .card2 ul{
-    line-height: 14px;
+    list-style-type: none;
     margin-left: -28px;
     margin-right: -3px;
     margin-top: -8px;
+}
+
+.card2 ul li{
+    position: relative;
+    padding-left: 20px;
+}
+
+.card2 ul li::before {
+    content: "\2714"; /* Unicode */
+    color: #00ad6a; 
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 
 .card3{
     display: flex;
-    width: 26%;
+    width: 20%;
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 20px;
     flex-direction: column;
-    border: 1px solid #bec9c5;
-    background-color: #d6dae5
+    border: 1px solid #dae0de;
+    background-color: white;
+    box-sizing: border-box;
 }
 
 .card3header{
+    display: flex;
     text-align: center;
-}   
+    flex-direction: column;
+    align-items: center;}   
+
+.grauebox{
+    display: flex;
+    background-color: #dae0de71;
+    width: calc(100% + 40px);
+    margin-left: -20px;
+    margin-right: -20px;
+    flex-grow: 1;
+    min-height: 80px;
+    border: 1px solid #dae0de;
+    box-sizing: border-box;
+    justify-content: space-evenly;
+    align-items: center;
+}
 
 .card3 h1{
     color: #00ad6a;
-    font-weight: 100;
-    font-size: 28px;
+    font-weight: 400;
+    font-size: 31px;
+    letter-spacing: -1px;
+    line-height: 32px;
+    margin-bottom: 10px;
 }
 
 .card3 h4{
-    background-color: lightgrey;
     margin: 0;
-    width: 116%;
-    margin-left: -20px;
-    height: 76px;
-    font-size: 10px;
+    color: rgb(108, 108, 108);
+    font-size: smaller;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    line-height: 15px;
 }
 
 .card3 ul{
-    line-height: 14px;
+    list-style-type: none;
     margin-left: -28px;
     margin-right: -3px;
     margin-top: -8px;
+}
+
+.card3 ul li{
+    position: relative;
+    padding-left: 20px;
+}
+
+.card3 ul li::before {
+    content: "\2714"; /* Unicode */
+    color: #00ad6a; 
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 
 .allcards{
     display: flex;
     align-items: center;
-    margin-right: -80px;
-    margin-left: 57px;
+    justify-content: center;
 }
 
 </style>
