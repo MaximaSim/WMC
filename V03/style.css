@@ -41,7 +41,6 @@ nav img{
 nav ul{
     display: flex;
     justify-content: space-between;
-    width: 30%;
     list-style-type: none;
 }
 
