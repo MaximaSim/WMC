@@ -53,6 +53,11 @@ nav ul{
     border: 5px solid #00ad6a;
 }
 
+.header{
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
 .header h1{
     font-size: 4rem;
     text-align: center;
@@ -60,6 +65,7 @@ nav ul{
     margin-bottom: 1rem;
     letter-spacing: -0.2rem;
     line-height: 4rem;
+
 }
 
 .header h2{
@@ -76,15 +82,16 @@ nav ul{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-right: 10%;
+    padding-left: 10%;
 }
 
 .card1{
     display: flex;
     flex-direction: column;
-    width: 18.5rem;
-    padding: 1.25rem;
+    width: 20rem;
+    padding: 4.5rem;
     border-radius: 0.625rem;
-    margin-right: 3%;
 }
 
 .card1 h2{
@@ -290,6 +297,8 @@ nav ul{
     justify-content: center;
     margin-top: 6.25rem;
     margin-bottom: 6.25rem;
+    padding-right: 10%;
+    padding-left: 10%;
 }
 
 .subvert img{
