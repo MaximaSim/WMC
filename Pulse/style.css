@@ -1,0 +1,443 @@
+body {  
+    padding: 0;
+    margin: 0;
+    background-color: #eafaf1;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 1.2em;
+    line-height: 1.8rem;
+    font-weight: 400;
+}
+
+a{
+    color: #000000;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 10%;
+    padding-top: 1.25rem;
+    padding-left: 10%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #eafaf1;
+}
+
+.nav-item{
+    font-weight: 800;
+    color: #00ad6a;
+    font-size: 1.2em;
+    border: 5px solid transparent;
+    padding: 0.3rem;
+}
+
+nav img{
+    width: 17rem;
+    height: 8rem;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.active{
+    color: black;
+}
+
+.nav-item:hover{
+    cursor: pointer;
+    border: 5px solid #00ad6a;
+}
+
+.header h1{
+    font-size: 4rem;
+    text-align: center;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    letter-spacing: -0.2rem;
+    line-height: 4rem;
+}
+
+.header h2{
+    font-size: 1.4rem;
+    text-align: center;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 4.5rem;
+    letter-spacing: 0.06rem;
+    line-height: 1.7rem;
+}
+
+.allcards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card1{
+    display: flex;
+    flex-direction: column;
+    width: 18.5rem;
+    padding: 1.25rem;
+    border-radius: 0.625rem;
+    margin-right: 3%;
+}
+
+.card1 h2{
+    color: #00ad6a;
+    font-weight: 800;
+    font-size: 1.5rem;
+    margin-bottom: -0.9rem;
+    line-height: 1.3rem;
+}
+
+.card1 ul{
+    padding-left: 1.125rem;
+    margin: 0;
+}
+
+.card1 p{
+    margin-top: 0.9rem;
+    margin-bottom: 0;
+}
+
+.card2{
+    display: flex;
+    width: 28.125rem;
+    padding: 1.25rem;
+    flex-direction: column;
+    border: 1px solid #00ad6a;
+    background-color: white;
+    padding-top: 0;
+    border-top-left-radius: 0.625rem;
+    border-top-right-radius: 0.625rem;
+    box-sizing: border-box;
+}
+
+.card2header{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.card2 h2{
+    background-color: #00ad6a;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 0;
+    font-size: 0.875rem;
+    height: 2.125rem;
+    letter-spacing: 0.2rem;
+    border-top-left-radius: 0.625rem;
+    border-top-right-radius: 0.625rem;
+    margin-left: -1.25rem;
+    margin-right: -1.25rem;
+}
+
+.card2 h3{
+    text-align: center;
+    color: #00ad6a;
+    font-weight: bold;
+    font-size: 3.5rem;
+    margin-bottom: 3%;
+    margin-top: 6%;
+    line-height: 3.25rem;
+    letter-spacing: -0.2rem;
+}
+
+.button{
+    background-color: #1fe374;
+    color: white;
+    border: none;
+    padding: 0.625rem;
+    margin-top: 0.625rem;
+    width: 50%;
+    border-color: #00ad6a;
+    border-style: solid;
+    color: black;
+    font-weight: 800;
+    border-width: 0.09375rem;
+    text-align: center;
+    font-size: 1.125rem;
+    letter-spacing: -0.03125rem;
+}
+
+.price{
+    text-align: center;
+    font-size: 1.5625rem;
+    font-weight: 400;
+    margin-bottom: 0.5625rem;
+    margin-top: 0;
+    color: rgb(108, 108, 108);
+}
+
+.subtitle{
+    font-weight: 800;
+    font-size: 0.9375rem;
+}
+
+.card2 ul{
+    list-style-type: none;
+    margin-left: -1.75rem;
+    margin-right: -0.18rem;
+    margin-top: -0.625rem;
+    margin-bottom: 1.25rem;
+}
+
+.card2 ul li{
+    position: relative;
+    padding-left: 1.25rem;
+    margin-bottom: 0.625rem;
+}
+
+.card2 ul li::before {
+    content: "\2714"; /* Unicode */
+    color: #00ad6a; 
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.card3{
+    display: flex;
+    width: 32rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    padding-bottom: 1.25rem;
+    flex-direction: column;
+    border: 1px solid #dae0de;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+.card3header{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;}   
+
+.grauebox{
+    display: flex;
+    background-color: #dae0de71;
+    width: calc(100% + 2.5rem);  /* card3 hat padding von 1.25rem, muss einberechnet werden */
+    margin-left: -1.25rem;
+    margin-right: -1.25rem;
+    flex-grow: 1; /* damit die graue box die ganze breite einnimmt, verändert sich relativ */
+    min-height: 5rem;
+    border: 1px solid #dae0de;
+    box-sizing: border-box;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card3 h2{
+    color: #00ad6a;
+    font-weight: 400;
+    font-size: 2.8rem;
+    letter-spacing: -0.06rem;
+    line-height: 2.8rem;
+    margin-bottom: 0.625rem;
+}
+
+.card3 h4{
+    margin: 0;
+    color: rgb(108, 108, 108);
+    font-size: smaller;
+    letter-spacing: 0.03rem;
+    font-weight: 500;
+    line-height: 1.25rem;
+}
+
+.card3 ul{
+    list-style-type: none;
+    margin-left: -1.75rem;
+    margin-right: -0.2rem;
+    margin-top: -0.5rem;
+    padding-right: 1rem;
+}
+
+.card3 ul li{
+    position: relative;
+    padding-left: 1.25rem;
+    margin-bottom: 0.625rem;
+}
+
+.card3 ul li::before {
+    content: "\2714"; /* Unicode */
+    color: #00ad6a; 
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.allcards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.subvert{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 6.25rem;
+    margin-bottom: 6.25rem;
+}
+
+.subvert img{
+    width: 8rem;
+    height: 8rem;
+}
+
+.subvert h2{
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1.9rem;
+    letter-spacing: 0.2rem;
+}   
+
+.subvert h3{
+    font-size: 1.125rem;
+    font-weight: 400;
+    margin-top: 1rem;
+    margin-bottom: 0;
+    color: #00ad6a;
+    font-weight: 800;
+}
+
+.faq{
+    background-color: white;
+    padding-left: 10%;
+    padding-right: 20%;
+    line-height: 1.9rem;
+    border-top: 1px solid #dae0de;
+}
+
+
+.faq h2{
+    display: grid;
+    grid-column: auto;
+    font-size: 3.125rem;
+    font-weight: 800;
+    margin-top: 4.375rem;
+    padding-top: 4.375rem;
+}
+
+.faqbody{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 5%;
+}
+
+.row{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5%;
+}
+
+.row h3{
+    font-size: 1.4rem;
+    font-weight: 800;
+    margin: 0;
+    margin-top: 1rem;
+}
+
+.row p{
+    margin: 0;
+    font-size: 1.3rem;
+    text-align: justify;
+}
+
+footer{
+    background-color: #080c16;
+    color: grey;
+    padding-left: 10%;
+}
+
+footer a{
+    color: grey;
+}
+
+footer h1{
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: white;
+}
+
+footer p{
+    font-size: 1.2rem;
+    color: #00ad6a;
+    font-weight: 500;
+    margin-top: 0.625rem;
+}
+
+.footercontent{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 3%;
+    padding-bottom: 5%;
+}
+
+footer .button{
+    display: flex;
+    justify-content: flex-start;
+    width: fit-content;
+    padding: 1%;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    letter-spacing: 0.03rem;
+    background: linear-gradient(90deg, #00ad6a, #1fe374);
+}
+
+.footerImgAndButton{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    align-items: flex-start;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    gap: 23%;
+}
+
+.alleLinks{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2.5rem;
+    align-content: center;
+}	
+
+footer h4{
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.KnopfAmEnde{
+    background-color: #00ad6a;
+    color: white;
+    border-color: white;
+    border-style: solid;
+    width: fit-content;
+    border: solid;
+    height: fit-content;
+    font-size: large;
+    padding: 0.5rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin-right: 1%;
+}
+
+.Kleingedrucktes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
