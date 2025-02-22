@@ -6,4 +6,37 @@ function isPrim(n) {
     return true;
 }
 
-checkPrim()
+function checkPrim() {
+    let n = parseInt(document.getElementById("inputNumber").value); // parseInt wandelt String in Zahl um
+    let yellow = "#facc15";
+    let green = "#4ade80";
+    let red = "#fb7185";
+    let output = document.getElementById("output");
+
+    if(n < 0) {
+        output.textContent = "NUR POSITIVE ZAHLEN !";
+        output.style.backgroundColor = yellow;
+        output.style.color = "black";
+        return;
+    }
+
+    if(isNaN(n)) {
+        output.textContent = "ZAHL EINGEBEN HAB ICH GESAGT !";
+        output.style.backgroundColor = yellow;
+        output.style.color = "black";
+        return;
+    }
+
+    if(isPrim(n)) {
+        output.textContent = n + " ist eine Primzahl";
+        output.style.backgroundColor = green;
+    }
+    else {
+        output.textContent = n + " ist keine Primzahl";
+        output.style.backgroundColor = red;
+    }
+}
+
+function reset() {
+    document.getElementById("inputNumber").value = "";
+}

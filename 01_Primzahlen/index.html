@@ -4,14 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="script" href="script.js">
     <title>Primzahlen</title>
 </head>
 <body>
-    <h1>Primzahlenrechner</h1>
-    <h2>Bitte geben Sie eine Zahl ein:</h2>
-    <input type="number" id="inputNumber" placeholder="Zahl eingeben">
-    <button onclick="checkPrim()"></button>
-    <p id="output"></p>
+    <h1>Primzahlenchecker</h1>
+    <div class="content">
+        <h2>Bitte geben Sie eine Zahl ein:</h2>
+        <div id="Eingabe">
+            <div id="Zahlenfeld">
+            <input id="inputNumber" placeholder="Zahl eingeben">
+            <button onclick="reset()">C</button>
+            </div>
+            <button id="check" onclick="checkPrim()">Check</button>
+            <p id="output"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
