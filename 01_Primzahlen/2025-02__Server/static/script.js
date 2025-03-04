@@ -6,6 +6,14 @@ function isPrim(n) {
     return true;
 }
 
+function konfettiRegen() {
+    confetti({
+        particleCount: 150, // Anzahl der Partikel
+        spread: 70,         // Weite des Effekts
+        origin: { y: 0.6 }  // Startpunkt (etwas unterhalb der Mitte)
+    });
+}
+
 function checkPrim() {
     let n = parseInt(document.getElementById("inputNumber").value); // parseInt wandelt String in Zahl um
     let yellow = "#facc15";
@@ -30,6 +38,7 @@ function checkPrim() {
     if(isPrim(n)) {
         output.textContent = n + " ist eine Primzahl";
         output.style.backgroundColor = green;
+        konfettiRegen();
     }
     else {
         output.textContent = n + " ist keine Primzahl";
