@@ -37,6 +37,9 @@ function isPrim(num: number) {
   return true;
 }
 
+const number = 7;
+
+
 // serve all other static files
 app.get("*", serveStatic({ root: "./static" }));
 
