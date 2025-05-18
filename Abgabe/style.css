@@ -1,0 +1,172 @@
+/* Main Color Palette - Pastel Colors */
+:root {
+    --pastel-pink: #ffb6c1;
+    --pastel-purple: #d8b5ff;
+    --pastel-blue: #b5d8ff;
+    --pastel-yellow: #ffffd8;
+    --pastel-mint: #c1ffed;
+    --light-text: #555555;
+    --dark-text: #333333;
+    --white: #ffffff;
+    --light-shadow: rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--pastel-yellow);
+    color: var(--dark-text);
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(135deg, var(--pastel-pink), var(--pastel-purple));
+    color: var(--white);
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 12px var(--light-shadow);
+    border-bottom: 3px solid var(--pastel-blue);
+}
+
+h1 {
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 5px 0;
+}
+
+nav a {
+    background-color: var(--white);
+    color: var(--dark-text);
+    text-decoration: none;
+    padding: 8px 16px;
+    margin: 5px 10px;
+    border-radius: 20px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px var(--light-shadow);
+}
+
+nav a:hover {
+    background-color: var(--pastel-mint);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px var(--light-shadow);
+}
+
+main {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+h2 {
+    font-size: 2.4rem;
+    margin-bottom: 15px;
+    color: var(--dark-text);
+    
+}
+
+#sotd {
+    font-size: 1.5rem;
+    ;
+    
+}
+
+#boxSotd {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    background-color: var(--pastel-blue);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px var(--light-shadow);
+    transition: all 0.3s ease;
+    margin-top: 8%;
+}
+
+#albumContainer {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: var(--white);
+    border-radius: 15px;
+    box-shadow: 0 4px 12px var(--light-shadow);
+}
+
+#albumList {
+    list-style-type: none;
+}
+
+#everySingleAlbum {
+    margin-bottom: 15px;
+    padding: 15px;
+    background-color: var(--pastel-purple);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+#everySingleAlbum:hover {
+    background-color: var(--pastel-pink);
+    transform: translateY(-2px);
+}
+
+#everySingleAlbum span {
+    display: block;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--dark-text);
+    padding: 5px 0;
+}
+
+
+#songList {
+    list-style-type: none;
+    margin-top: 15px;
+    padding: 10px;
+    background-color: var(--white);
+    border-radius: 8px;
+}
+
+#songList li {
+    padding: 10px;
+    margin: 5px 0;
+    background-color: var(--pastel-mint);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+#songList li:hover {
+    background-color: var(--pastel-blue);
+}
+
+#songList li.opened {
+    background-color: var(--pastel-pink);
+}
+
+#songList p {
+    margin-top: 10px;
+    padding: 15px;
+    background-color: var(--pastel-yellow);
+    border-radius: 8px;
+    font-style: italic;
+    line-height: 1.8;
+    white-space: pre-line;
+    font-size: 0.95rem;
+    color: var(--light-text);
+    border-left: 4px solid var(--pastel-pink);
+}
