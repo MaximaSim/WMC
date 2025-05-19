@@ -65,7 +65,8 @@ fetch("https://taylor-swift-api.sarbo.workers.dev/albums")
                                     fetch(`https://taylor-swift-api.sarbo.workers.dev/lyrics/${songId}`)
                                         .then((response) => response.json())
                                         .then((lyrics) => {
-                                                const lyricsFromSong = document.createElement("p");
+                                                const lyricsFromSong = document.createElement("div");
+                                                lyricsFromSong.id = "lyrics";
                                                 lyricsFromSong.textContent = `"${lyrics.lyrics}"\n\n(Auszug aus den Songtext)`;
                                                 songTitel.appendChild(lyricsFromSong);	
                                             })

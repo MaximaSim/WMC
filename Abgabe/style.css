@@ -170,3 +170,35 @@ h2 {
     color: var(--light-text);
     border-left: 4px solid var(--pastel-pink);
 }
+
+#songTitle {
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--dark-text);
+    margin-bottom: 10px;
+    margin-left: 5%;
+    list-style: none;
+    background-color: #c1ffed;
+    display: flex;
+    justify-content: space-around;
+    margin-right: 10%;
+    margin-left: 10%;
+    border-radius: 7px;
+}
+
+#songTitle li {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--dark-text);
+    padding: 5px 0;
+}
+#lyrics {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: var(--light-text);
+    margin: 10px 5%;
+    padding: 10px;
+    background-color: var(--pastel-yellow);
+    border-radius: 8px;
+    white-space: pre-line;
+}
