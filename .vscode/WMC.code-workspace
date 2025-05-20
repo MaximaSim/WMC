@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../sj24-25-4akif-wmc"
+		},
+		{
+			"path": "../../sj24-25-4akif-postheorie"
+		},
+		{
+			"path": "../../private"
+		},
+		{
+			"path": "../../Graphentheorie"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "WMC"
+	}
+}
