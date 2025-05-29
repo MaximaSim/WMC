@@ -3,7 +3,7 @@
     --pastel-pink: #ffb6c1;
     --pastel-purple: #d8b5ff;
     --pastel-blue: #b5d8ff;
-    --pastel-yellow: #ffffd8;
+    --pastel-yellow: #ffffef;
     --pastel-mint: #c1ffed;
     --light-text: #555555;
     --dark-text: #333333;
@@ -80,7 +80,6 @@ h2 {
 
 #sotd {
     font-size: 1.5rem;
-    ;
     
 }
 
@@ -98,19 +97,13 @@ h2 {
     margin-top: 8%;
 }
 
-#albumContainer {
-    margin: 20px auto;
-    padding: 20px;
-    background-color: var(--white);
-    border-radius: 15px;
-    box-shadow: 0 4px 12px var(--light-shadow);
-}
-
-#albumList {
+.albumList {
     list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
-#everySingleAlbum {
+.everySingleAlbum {
     margin-bottom: 15px;
     padding: 15px;
     background-color: var(--pastel-purple);
@@ -119,12 +112,12 @@ h2 {
     cursor: pointer;
 }
 
-#everySingleAlbum:hover {
+.everySingleAlbum:hover {
     background-color: var(--pastel-pink);
     transform: translateY(-2px);
 }
 
-#everySingleAlbum span {
+.everySingleAlbum span {
     display: block;
     font-size: 1.4rem;
     font-weight: bold;
@@ -132,41 +125,112 @@ h2 {
     padding: 5px 0;
 }
 
-
-#songList {
+.everySingleAlbum ul {
     list-style-type: none;
     margin-top: 15px;
-    padding: 10px;
-    background-color: var(--white);
+    padding: 4px;
+    background-color: var(--pastel-yellow);
     border-radius: 8px;
 }
 
-#songList li {
-    padding: 10px;
-    margin: 5px 0;
-    background-color: var(--pastel-mint);
+.songTitle {
+    padding: 8px;
+    font-size: 1.3rem;
+    margin: 1%;
+    background-color: var(--pastel-purple);
     border-radius: 5px;
     cursor: pointer;
-    transition: all 0.2s ease;
+    transition: all 0.2sease;
+    display: flex;
+    justify-content: center;
 }
 
-#songList li:hover {
+.songTitle:hover {
     background-color: var(--pastel-blue);
 }
 
-#songList li.opened {
+#contentWrapper {
+    display: flex;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+#leftColumn {
+    flex: 1.2;
+}
+
+#rightColumn {
+    flex: 2;
+    background-color: var(--white);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px var(--light-shadow);
+    min-height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-start;
+}
+
+#lyricsBox p {
+    font-style: italic;
+    text-align: center;
+    color: var(--light-text);
+    font-size: 1.1rem;
+}
+
+#searchForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto 20px;
+    gap: 10px;
+}
+
+#searchInput {
+    padding: 12px 16px;
+    border: 2px solid var(--pastel-purple);
+    border-radius: 25px;
+    font-size: 1rem;
+    width: 300px;
+    transition: border-color 0.3s ease;
+    background-color: var(--white);
+    box-shadow: 0 2px 6px var(--light-shadow);
+}
+
+#searchInput:focus {
+    outline: none;
+    border-color: var(--pastel-pink);
+    box-shadow: 0 0 0 3px var(--pastel-pink);
+}
+
+#searchForm button {
+    padding: 10px 18px;
+    font-size: 1rem;
+    background-color: var(--pastel-purple);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#searchForm button:hover {
     background-color: var(--pastel-pink);
 }
 
-#songList p {
-    margin-top: 10px;
-    padding: 15px;
-    background-color: var(--pastel-yellow);
-    border-radius: 8px;
-    font-style: italic;
-    line-height: 1.8;
-    white-space: pre-line;
-    font-size: 0.95rem;
-    color: var(--light-text);
-    border-left: 4px solid var(--pastel-pink);
+.favoriteButton {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: transform 0.2s ease;
 }
+
+.favoriteButton:hover {
+    transform: scale(1.2);
+    color: gold;
+}
+

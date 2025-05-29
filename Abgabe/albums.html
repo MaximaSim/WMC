@@ -18,10 +18,25 @@
         </header>
 
         <main>
-            <section id="albumContainer">
+            <section id="albumSearch">
+                <form id="searchForm">
+                    <input type="text" id="searchInput" placeholder="Song suchen..." />
+                    <button type="submit">Clear</button>
+                </form>
             </section>
+
+            <div id="contentWrapper">
+                <div id="leftColumn">
+                    <section id="albumContainer"></section>
+                </div>
+                <div id="rightColumn">
+                    <div id="lyricBox">
+                        <p>🎵 Wähle einen Song, um den Text anzuzeigen</p>
+                    </div>
+                </div>
+            </div>
         </main>
 
-        <script src="script.js"></script>
+        <script src="albums.js"></script>
     </body>
 </html>
