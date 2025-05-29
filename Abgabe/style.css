@@ -89,7 +89,7 @@ h2 {
     flex-direction: column;
     align-items: center;
     margin: 20px auto;
-    background-color: var(--pastel-blue);
+    background-color: var(--pastel-purple);
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 4px 12px var(--light-shadow);
@@ -229,43 +229,46 @@ h2 {
     transition: transform 0.2s ease;
 }
 
-<<<<<<< HEAD
 .favoriteButton:hover {
     transform: scale(1.2);
-    color: gold;
+    color: red;
 }
 
-=======
-#songTitle {
-    font-size: 1rem;
-    font-weight: bold;
-    color: var(--dark-text);
-    margin-bottom: 10px;
-    margin-left: 5%;
-    list-style: none;
-    background-color: #c1ffed;
+#favoriteSongs{
     display: flex;
-    justify-content: space-around;
-    margin-right: 10%;
-    margin-left: 10%;
-    border-radius: 7px;
+    flex-direction: column;
+    align-items: center;
 }
 
-#songTitle li {
-    font-size: 1.2rem;
-    font-weight: bold;
+#favoriteSongs ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#favoriteSongs li {
+    margin-bottom: 15px;
+    padding: 15px;
+    background-color: var(--pastel-purple);
+    border-radius: 10px;
+    font-size: larger;
+    display: flex;
+    justify-content: space-evenly;
+    border: #333333 1px solid;
+    gap: 10%;
+}
+
+#favoriteSongs h2 {
+    font-size: 2.6rem;
+    margin-bottom: 4%;
+    margin-top: 4%;
     color: var(--dark-text);
-    padding: 5px 0;
 }
 
-#lyrics {
-    font-size: 0.9rem;
-    line-height: 1.5;
-    color: var(--light-text);
-    margin: 10px 5%;
-    padding: 10px;
-    background-color: var(--pastel-yellow);
-    border-radius: 8px;
-    white-space: pre-line;
+#favoriteSongs a {
+    text-decoration: none;
+    color: var(--dark-text);
+    display: flex;
+    align-items: flex-end;
 }
->>>>>>> adc88a8f4c89472160f89195aa4bf286674d17b7
+

@@ -12,16 +12,21 @@ function updateFavoritesList() {
 
     favorites.forEach((song) => {
         const li = document.createElement("li");
-        li.textContent = song.title;
+        const youtubeLink = document.createElement("a");
+        youtubeLink.href = `https://www.youtube.com/results?search_query=Taylor+Swift+${encodeURIComponent(song.title)}`;
+        youtubeLink.target = "_blank";
+        youtubeLink.textContent = "▶ YouTube";
 
-        const removeButton = document.createElement("button");
-        removeButton.textContent = "Remove";
-        removeButton.addEventListener("click", () => {
-            toggleFavorite(song);
-            updateFavoritesList();
-        });
+        const spotifyLink = document.createElement("a");
+        spotifyLink.href = `https://open.spotify.com/search/Taylor%20Swift%20${encodeURIComponent(song.title)}`;
+        spotifyLink.target = "_blank";
+        spotifyLink.textContent = "▶ Spotify";
+        
 
-        li.appendChild(removeButton);
+        li.appendChild(document.createTextNode(song.title + " "));
+        li.appendChild(youtubeLink);
+        li.appendChild(document.createTextNode(" | "));
+        li.appendChild(spotifyLink);
         list.appendChild(li);
     });
 }
