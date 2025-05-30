@@ -25,7 +25,7 @@ function updateFavoritesList() {
 
         li.appendChild(document.createTextNode(song.title + " "));
         li.appendChild(youtubeLink);
-        li.appendChild(document.createTextNode(" | "));
+        li.appendChild(document.createTextNode(" --- "));
         li.appendChild(spotifyLink);
         list.appendChild(li);
     });

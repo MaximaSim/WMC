@@ -97,6 +97,66 @@ h2 {
     margin-top: 8%;
 }
 
+#sudoku {
+    text-align: center;
+    padding: 2rem;
+    margin: 5rem auto;
+}
+
+#sudoku h2 {
+    margin-bottom: 3.5rem;
+    background-color: var(--pastel-purple);
+    border-radius: 15px;
+    box-shadow: 0 4px 12px var(--light-shadow);
+    padding: 1rem;
+}   
+
+#sudokuTable {
+    border-collapse: collapse;
+    margin: 1rem auto;
+}
+
+#sudokuTable input::-webkit-outer-spin-button,
+#sudokuTable input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#sudokuTable td {
+    border: 1px solid var(--dark-text);
+    width: 4rem;
+    height: 4rem;
+    padding: 0;
+}
+
+#sudokuTable input {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 2rem;
+    border: none;
+    background-color: #fff0f5;
+    color: #8a4f7d;
+}
+
+#sudoku button {
+    margin-top: 1rem;
+    padding: 0.6rem 1.2rem;
+    font-size: 1.5rem;
+    background-color: var(--pastel-purple);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: background 0.3s;
+}
+
+#sudoku button:hover {
+    background-color: #e6a4b4;
+}
+
+
 .albumList {
     list-style-type: none;
     padding: 0;
@@ -254,8 +314,10 @@ h2 {
     font-size: larger;
     display: flex;
     justify-content: space-evenly;
+    flex-direction: column;
     border: #333333 1px solid;
     gap: 10%;
+    align-items: center;
 }
 
 #favoriteSongs h2 {
