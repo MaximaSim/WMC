@@ -70,7 +70,10 @@ fetch("https://taylor-swift-api.sarbo.workers.dev/albums")
                                     .then((lyrics) => {
                                         lyricBox.innerHTML = "";
                                         const lyricsFromSong = document.createElement("p");
-                                        lyricsFromSong.textContent = lyrics.lyrics || "Lyrics not available.";
+                                        if (lyrics.lyrics === "") 
+                                            lyricsFromSong.innerHTML = "Lyrics not available.";
+                                        else
+                                            lyricsFromSong.innerHTML = lyrics.lyrics + "...<br>" + "(Auszug aus dem Songtext)";
                                         lyricBox.appendChild(lyricsFromSong);
                                     })
                                     .catch((error) => {

@@ -15,13 +15,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
     background-color: var(--pastel-yellow);
     color: var(--dark-text);
     line-height: 1.6;
+    font-family: 'Quicksand', sans-serif;
 }
 
 header {
@@ -31,6 +31,7 @@ header {
     text-align: center;
     box-shadow: 0 4px 12px var(--light-shadow);
     border-bottom: 3px solid var(--pastel-blue);
+    font-family: 'Quicksand', sans-serif;
 }
 
 h1 {
@@ -234,11 +235,11 @@ h2 {
     align-self: flex-start;
 }
 
-#lyricsBox p {
-    font-style: italic;
+#lyricBox {
+    font-family: 'Gloria Hallelujah', cursive;
     text-align: center;
     color: var(--light-text);
-    font-size: 1.1rem;
+    font-size: 1.5rem;
 }
 
 #searchForm {
