@@ -44,7 +44,7 @@ function rechnen() {
         queue.push(start); //der Startknoten kommt in die Warteschlange
 
         while (queue.length > 0) { //solange Knoten in der Warteschlange sind
-            const current = queue.shift(); //der erste Knoten wird aus der Warteschlange entfernt
+            const current = queue.shift(); //der Knoten wird aus der Warteschlange entfernt
             for (let i = 0; i < n; i++) { //für jeden Knoten
                 if (matrix[current][i] === 1 && !besucht[i]) { //wenn eine Kante existiert und der Knoten noch nicht besucht wurde
                     besucht[i] = true; //der Knoten wird als besucht markiert
@@ -62,9 +62,9 @@ function rechnen() {
         ausgabe += `Knoten ${start}: Exzentrizität = ${maxDist}\n`;
     }
     //berechnet den Radius, Durchmesser und Zentrum und Ausgabe
-    const radius = Math.min(...exzenti);
+    const radius = Math.min(...exzenti); //... bedeutet in js "spread operator", der die Werte des Arrays entpackt
     const durchmesser = Math.max(...exzenti);
-    const zentrum = exzenti.map((e, i) => (e === radius ? i : null)).filter(x => x !== null);
+    const zentrum = exzenti.map((e, i) => (e === radius ? i : null)).filter(x => x !== null); //findet die Knoten, deren Exzentrizität dem Radius entspricht
 
     ausgabe += `\nRadius = ${radius}\nDurchmesser = ${durchmesser}\nZentrum = ${zentrum.join(", ")}\n`;
 
