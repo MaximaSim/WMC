@@ -55,7 +55,7 @@ fetch("https://taylor-swift-api.sarbo.workers.dev/albums")
                             const lyricBox = document.getElementById("lyricBox");
 
                             songTitel.addEventListener("click", (event) => {
-                                event.stopPropagation();
+                                event.stopPropagation(); // Verhindert, dass das event mehrmals hintereinander ausgeführt wird
                                 if (songTitel.classList.contains("opened")) {
                                     lyricBox.innerHTML = "";
                                     songTitel.classList.remove("opened");
@@ -65,7 +65,7 @@ fetch("https://taylor-swift-api.sarbo.workers.dev/albums")
                                 songTitel.classList.add("opened");
                                 const songId = song.song_id;
 
-                                fetch(`https://taylor-swift-api.sarbo.workers.dev/lyrics/${songId}`)
+                                fetch(`https://taylor-swift-api.sarbo.workers.dev/lyrics/${songId}`) 
                                     .then((response) => response.json())
                                     .then((lyrics) => {
                                         lyricBox.innerHTML = "";

@@ -2,7 +2,7 @@ function updateFavoritesList() {
     const list = document.getElementById("favoritesList");
     if (!list) return;
 
-    const favorites = JSON.parse(localStorage.getItem("favoriteSongs")) || [];
+    const favorites = JSON.parse(localStorage.getItem("favoriteSongs")) || []; // Lade Favoriten aus dem Local Storage
     list.innerHTML = "";
 
     if (favorites.length === 0) {
